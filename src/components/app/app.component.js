@@ -1,15 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import Header from '../header/header.component';
+import Header from "../header/header.component";
+import Sidebar from "../sidebar/sidebar.component";
 
-import '../../common/styles';
+import "../../common/styles";
+
 
 const App = () => {
   return (
-    <div className="App">
-      <Header/>
+    <div className="app">
+      <Header />
+      <div className="app-body">
+        <Sidebar />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
