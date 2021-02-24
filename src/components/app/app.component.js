@@ -1,23 +1,23 @@
 import React from "react";
 
-import Header from "../header/header.component";
-import Sidebar from "../sidebar/sidebar.component";
-import Feed from "../feed/feed.component";
-import Widgets from "../widgets/widgets.component";
+import Home from "../../pages/home/home.page";
+import Login from "../../pages/login/login.page";
 
 import "../../common/styles";
 import "./app.component.css";
 
 
 const App = () => {
+  const user = "null";
   return (
     <div className="app">
-      <Header />
-      <div className="app-body">
-        <Sidebar />
-        <Feed/>
-        <Widgets/>
-      </div>
+      {!user ? (
+        <Login/>
+      ) : (
+        <>
+          <Home/>
+        </>
+      )}
     </div>
   );
 };
