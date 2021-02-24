@@ -6,20 +6,12 @@ import Login from "../../pages/login/login.page";
 import "../../common/styles";
 import "./app.component.css";
 
+import { useStateValue } from "../../store/state.provider";
 
 const App = () => {
-  const user = "null";
-  return (
-    <div className="app">
-      {!user ? (
-        <Login/>
-      ) : (
-        <>
-          <Home/>
-        </>
-      )}
-    </div>
-  );
+  const [{ user }, dispatch] = useStateValue();
+
+  return <div className="app">{!user ? <Login /> : <Home />}</div>;
 };
 
 export default App;

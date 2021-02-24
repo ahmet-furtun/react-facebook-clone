@@ -5,6 +5,8 @@ import Header from '../../components/header/header.component';
 import Sidebar from '../../components/sidebar/sidebar.component';
 import Widgets from '../../components/widgets/widgets.component';
 
+import './home.page.css';
+
 const Home = () => {
     return (
         <div className="homepage">
