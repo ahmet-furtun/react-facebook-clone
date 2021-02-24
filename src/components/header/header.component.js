@@ -12,9 +12,9 @@ import ForumIcon from '@material-ui/icons/Forum';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
+import { useStateValue } from "../../store/state.provider";
 
 import "./header.component.css";
-import { useStateValue } from "../../store/state.provider";
 
 const Header = () => {
 
