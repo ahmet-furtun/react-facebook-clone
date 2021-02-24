@@ -47,7 +47,7 @@ const Header = () => {
       </div>
       <div className="header-right">
           <div className="header-info">
-              <Avatar/>
+              <Avatar src="https://icon2.cleanpng.com/20180626/ehy/kisspng-avatar-user-computer-icons-software-developer-5b327cc951ae22.8377289615300354013346.jpg"/>
               <h4>Ahmet Furtun</h4>
           </div>
 
